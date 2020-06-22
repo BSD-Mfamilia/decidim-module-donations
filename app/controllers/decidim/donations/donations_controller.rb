@@ -42,6 +42,9 @@ module Decidim
           }]
         )
         redirect_to @form.gateway.redirect_url_for(payment.token)
+      rescue
+        flash[:error] = I18n.t("decidim.paypal.empty")
+        redirect_back fallback_location: '/'
       end
     end
   end

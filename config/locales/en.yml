@@ -16,6 +16,8 @@ en:
             paypal_username: Paypal API Username
             paypal_password: Paypal API Password
             paypal_signature: Paypal API Signature
+            paypal_amounts: Paypal Amounts
+            paypal_amounts_help: Between each paypal amount there must be a comma
             paypal_enabled: Enable PayPal
             excerpt: Donation resume
           step:
@@ -29,3 +31,5 @@ en:
     participatory_processes:
       statistics:
         donations_count: Donations Received
+    paypal:
+      empty: You must select an amount to make the PayPal payment.

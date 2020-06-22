@@ -15,6 +15,7 @@ Decidim.register_component(:donations) do |component|
     settings.attribute :paypal_username, type: :string, required: true
     settings.attribute :paypal_password, type: :string, required: true
     settings.attribute :paypal_signature, type: :string, required: true
+    settings.attribute :paypal_amounts, type: :string, default: '5 10 20 35 50 75 100 150', required: true
   end
 
   component.settings(:step) do |settings|

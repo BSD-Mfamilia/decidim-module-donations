@@ -1,7 +1,9 @@
 <div class="card donation">
   <div class="card__content">
     <h4>
+    <%= " mi texto 12 " %>
       <%= t("donations.donation_amount", scope: "decidim.components") %>
+    <%= " mi texto 22 " %>
     </h4>
     <% if false %>
     <div class="frequency">
@@ -22,7 +24,7 @@
 
     <div class="amounts">
       <ul>
-        <% %w(5 10 20 35 50 75 100 150).each do |amount| %>
+        <% component_settings.paypal_amounts.split(',').each do |amount| %>
           <li class="column small-3">
             <button amount="<%= amount %>" class="amount button compact hollow secondary button--nomargin expanded">
               $<%= amount %>
@@ -42,7 +44,9 @@
       <h4>
       <%= t("donations.donation_excerpt", scope: "decidim.components") %>
       </h4>
+    <%= " mi texto 1 " %>
     <%= decidim_sanitize(translated_attribute(component_settings.excerpt)) %>
+    <%= " mi texto 2 " %>
     </div>
   </div>
 </div>

@@ -16,6 +16,8 @@ es:
             paypal_username: Usuario del API de Paypal
             paypal_password: Password del API de Paypal
             paypal_signature: Firma del API de Paypal
+            paypal_amounts: Paypal Montos
+            paypal_amounts_help: Entre cada monto paypal debe haber una coma
             paypal_enabled: Habilitar PayPal
             excerpt: Resumen de donaciones
           step:
@@ -29,3 +31,5 @@ es:
     participatory_processes:
       statistics:
         donations_count: Donaciones recibidas
+    paypal:
+      empty: Debe seleccionar un monto para hacer el pago PayPal.

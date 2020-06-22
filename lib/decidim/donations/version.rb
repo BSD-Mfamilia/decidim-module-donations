@@ -4,7 +4,7 @@ module Decidim
   # Holds decidim-donations version
   module Donations
     def self.version
-      "0.19.0"
+      "0.21.0"
     end
   end
 end
